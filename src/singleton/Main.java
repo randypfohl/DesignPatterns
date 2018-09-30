@@ -14,12 +14,8 @@ public class Main {
 		for(int i=0; i<numThreads; i++) {
 			taskExecutor.execute(new ThreadTest());
 		}
-
-
-		
 	}
 
-	
 	private static class ThreadTest implements Runnable {
 	    public void run() {
 	        long threadId = Thread.currentThread().getId();
